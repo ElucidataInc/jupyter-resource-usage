@@ -53,7 +53,7 @@ define([
         $('head').append(
             $('<style type="text/css">').html( '.close-button { background-color: #795fcb; color:white; border:0; border-radius: 5px; padding: 5px 10px; margin-top: 2rem;}')
         );
-        $('body').append( $('<div class="mem-overlay"> <div class="mem-modal"> <div class="text-box"> <p class="lead">Memory Usage Exceeding</p> <p class="text"> You have used 70% of the allocated memory. Please take corrective measures to prevent kernel from restarting</p></div><button class="close-button">Close</button></div></div>'));
+        $('body').append( $('<div class="mem-overlay"> <div class="mem-modal"> <div class="text-box"> <p class="lead">Memory Usage Exceeding</p> <p class="text"> You have used most of the allocated Memory. To avoid kernel restarts, try launching the notebook with a bigger machine.</p></div><button class="close-button">Close</button></div></div>'));
     }
 
     function humanFileSize(size) {
